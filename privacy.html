@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>นโยบายความเป็นส่วนตัว – HearClear</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, "Segoe UI", "Noto Sans Thai", sans-serif;
+         max-width: 44rem; margin: 0 auto; padding: 24px 16px 64px;
+         line-height: 1.7; font-size: 17px; }
+  h1 { font-size: 1.6rem; margin-bottom: 0.2em; }
+  h2 { font-size: 1.15rem; margin-top: 2em; }
+  .meta { opacity: 0.7; font-size: 0.9rem; }
+  hr { margin: 3em 0; border: 0; border-top: 1px solid rgba(128,128,128,.4); }
+  code { font-size: 0.9em; }
+</style>
+</head>
+<body>
+
+<h1>นโยบายความเป็นส่วนตัว — HearClear</h1>
+<p class="meta">แอป: HearClear (<code>com.furac.hearclear</code>)<br>
+ปรับปรุงล่าสุด: 21 กันยายน 2569 (2026)<br>
+ติดต่อ: furacc@gmail.com</p>
+
+<h2>สรุปสั้น ๆ</h2>
+<p>HearClear ไม่เก็บ ไม่บันทึก และไม่ส่งข้อมูลส่วนตัวของคุณไปที่เซิร์ฟเวอร์ของเรา
+เราไม่มีเซิร์ฟเวอร์และไม่มีระบบบัญชีผู้ใช้ เสียงจากไมโครโฟนถูกประมวลผลอยู่ในเครื่องของคุณ
+แบบเรียลไทม์เพื่อเล่นออกหูฟังทันที แล้วก็หายไป ไม่มีการเขียนลงไฟล์</p>
+
+<h2>ข้อมูลที่แอปใช้</h2>
+<p><strong>เสียงจากไมโครโฟน</strong> — ใช้เพื่อวัตถุประสงค์เดียวคือขยายและปรับแต่งเสียงพูด
+ให้ได้ยินชัดขึ้นผ่านหูฟังของคุณในขณะนั้น เสียงจะถูกประมวลผลในหน่วยความจำของเครื่องเท่านั้น
+ไม่ถูกบันทึกเป็นไฟล์ ไม่ถูกอัปโหลด และไม่ถูกแชร์กับบุคคลที่สาม
+แอปยังทำงานต่อเมื่อปิดหน้าจอ (บริการเบื้องหน้า / foreground service) เพื่อไม่ให้เสียงขาดหาย
+ระหว่างที่คุณกำลังฟัง คุณจะเห็นการแจ้งเตือนค้างไว้ตลอดเวลาที่ไมโครโฟนทำงาน</p>
+
+<p><strong>โหมดไมค์ระยะไกล (Remote Mic)</strong> — เมื่อคุณเปิดโหมดนี้ โทรศัพท์เครื่องอื่นที่คุณ
+ตั้งเป็น “ไมค์” จะส่งเสียงมายังเครื่องที่คุณใช้ฟัง การส่งนี้เกิดขึ้น
+<strong>ภายในเครือข่าย Wi‑Fi เดียวกันเท่านั้น</strong> (UDP ตรงระหว่างเครื่องต่อเครื่อง)
+ไม่ผ่านอินเทอร์เน็ต ไม่ผ่านเซิร์ฟเวอร์ของเราหรือของใคร และไม่มีการบันทึกไว้ที่ใด
+โปรดทราบว่าใครก็ตามที่อยู่บนเครือข่าย Wi‑Fi เดียวกันและมีแอปนี้อาจรับสัญญาณได้
+จึงควรใช้โหมดนี้บนเครือข่ายที่คุณไว้ใจ</p>
+
+<p><strong>คำบรรยายสด (Live Subtitle)</strong> — ฟีเจอร์นี้ใช้ระบบแปลงเสียงเป็นข้อความ
+ที่ติดตั้งมากับตัวเครื่องของคุณ (เช่น บริการรู้จำเสียงของ Google บน Android)
+เมื่อคุณเปิดฟีเจอร์นี้ เสียงอาจถูกส่งไปประมวลผลโดยผู้ให้บริการรายนั้นตามการตั้งค่าของเครื่องคุณ
+ซึ่งอยู่ภายใต้นโยบายความเป็นส่วนตัวของผู้ให้บริการนั้น ไม่ใช่ของเรา
+บางเครื่องรองรับการรู้จำเสียงแบบออฟไลน์ หากไม่ต้องการให้เสียงออกจากเครื่องเลย
+ให้ปิดฟีเจอร์คำบรรยายสด ส่วนฟีเจอร์อื่นทั้งหมดของ HearClear ทำงานในเครื่องล้วน ๆ</p>
+
+<p><strong>ผลการทดสอบการได้ยินและการตั้งค่า</strong> — ผลออดิโอแกรมและค่าที่คุณตั้งไว้
+ถูกเก็บไว้ในที่เก็บข้อมูลของแอปบนเครื่องคุณเท่านั้น เพื่อให้แอปจำการตั้งค่าไว้ได้
+ข้อมูลนี้ไม่ถูกส่งออกจากเครื่อง และจะถูกลบเมื่อคุณถอนการติดตั้งแอป</p>
+
+<h2>สิ่งที่เราไม่ทำ</h2>
+<p>เราไม่เก็บรวบรวมข้อมูลใด ๆ ไม่มีระบบวิเคราะห์การใช้งาน (analytics) ไม่มีโฆษณา
+ไม่มีเครื่องมือติดตามผู้ใช้ ไม่ขายหรือแบ่งปันข้อมูลกับบุคคลที่สาม
+และไม่มีการเก็บข้อมูลของคุณไว้ที่ใดนอกเครื่องของคุณเอง</p>
+
+<h2>สิทธิ์ที่แอปขอ และเหตุผล</h2>
+<p>ไมโครโฟน (RECORD_AUDIO) — เพื่อรับเสียงพูดมาขยาย ซึ่งเป็นหน้าที่หลักของแอป;
+บริการเบื้องหน้าประเภทไมโครโฟนและการเล่นสื่อ — เพื่อให้เสียงไม่ขาดเมื่อปิดหน้าจอ;
+สถานะเครือข่าย Wi‑Fi และอินเทอร์เน็ต — เพื่อค้นหาและเชื่อมต่อกับโทรศัพท์เครื่องอื่นในโหมดไมค์ระยะไกล
+ภายในวงแลนเท่านั้น; การแจ้งเตือน — เพื่อแสดงการแจ้งเตือนของบริการเบื้องหน้าตามที่ระบบกำหนด;
+บลูทูธ — เพื่อใช้กับหูฟังไร้สาย</p>
+
+<h2>เด็ก</h2>
+<p>แอปนี้ออกแบบมาสำหรับผู้ใหญ่และผู้สูงอายุ ไม่ได้มุ่งเป้าไปที่เด็กอายุต่ำกว่า 13 ปี
+และไม่ได้เก็บข้อมูลจากผู้ใช้ทุกช่วงวัยอยู่แล้ว</p>
+
+<h2>คำเตือนด้านสุขภาพ</h2>
+<p>HearClear เป็นแอปช่วยการฟัง (assistive listening) ไม่ใช่เครื่องช่วยฟังทางการแพทย์
+และไม่ใช่เครื่องมือแพทย์ ไม่ใช้แทนการตรวจการได้ยินโดยผู้เชี่ยวชาญ
+การทดสอบการได้ยินในแอปเป็นเพียงการประเมินคร่าว ๆ เพื่อปรับเสียงให้เหมาะกับคุณ
+ไม่ใช่การวินิจฉัยโรค หากคุณมีปัญหาการได้ยิน ควรพบแพทย์หรือนักโสตสัมผัสวิทยา</p>
+
+<h2>การเปลี่ยนแปลงนโยบายนี้</h2>
+<p>หากมีการแก้ไข เราจะอัปเดตหน้านี้พร้อมวันที่ปรับปรุงด้านบน</p>
+
+<hr>
+
+<h1>Privacy Policy — HearClear (English)</h1>
+<p class="meta">App: HearClear (<code>com.furac.hearclear</code>) · Last updated: 21 September 2026 · Contact: furacc@gmail.com</p>
+
+<h2>Summary</h2>
+<p>HearClear collects nothing. We operate no servers and no user accounts.
+Microphone audio is processed on your device in real time so you can hear it through
+your earphones, and is then discarded. It is never written to a file or uploaded.</p>
+
+<h2>Data the app uses</h2>
+<p><strong>Microphone audio</strong> is used for the single purpose of amplifying and
+clarifying speech for you at that moment. It is processed in memory on your device,
+never recorded, never uploaded, never shared. The app runs as a foreground service so
+audio does not cut out when the screen is off; a persistent notification is shown the
+whole time the microphone is in use.</p>
+
+<p><strong>Remote Mic mode</strong> sends audio from another phone you set up as a
+microphone to the phone you are listening on. That transfer happens
+<strong>only over your local Wi-Fi network</strong>, device to device over UDP. It does not
+travel over the internet, does not pass through our servers or anyone else's, and is
+never stored. Anyone on the same Wi-Fi network running this app could receive the
+stream, so use the feature on networks you trust.</p>
+
+<p><strong>Live Subtitle</strong> uses the speech-to-text service built into your device
+(for example Google's speech recognition on Android). When you turn this feature on,
+audio may be sent to that provider for processing, depending on your device settings,
+and is governed by that provider's privacy policy rather than ours. Some devices support
+offline recognition. Turn Live Subtitle off if you do not want any audio to leave the
+device; every other HearClear feature runs entirely on-device.</p>
+
+<p><strong>Hearing test results and settings</strong> are saved in the app's own storage
+on your device so it can remember your preferences. They never leave the device and are
+removed when you uninstall the app.</p>
+
+<h2>What we do not do</h2>
+<p>No data collection, no analytics, no advertising, no trackers, no selling or sharing
+with third parties, and no storage of your information anywhere outside your own device.</p>
+
+<h2>Permissions</h2>
+<p>Microphone (RECORD_AUDIO) for the core amplification function; foreground service of
+type microphone and media playback so audio continues with the screen off; Wi-Fi state and
+internet access solely to discover and connect to other phones on the same local network in
+Remote Mic mode; notifications for the required foreground-service notification; Bluetooth
+for wireless earphones.</p>
+
+<h2>Children</h2>
+<p>The app is intended for adults and older adults, is not directed at children under 13,
+and collects no data from users of any age.</p>
+
+<h2>Health notice</h2>
+<p>HearClear is an assistive listening app. It is not a hearing aid and not a medical
+device, and does not replace a professional hearing evaluation. The built-in hearing test
+is a rough self-assessment used to tune the sound, not a diagnosis. If you have hearing
+difficulties, please see a doctor or an audiologist.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, this page will be updated along with the date shown above.</p>
+
+</body>
+</html>
